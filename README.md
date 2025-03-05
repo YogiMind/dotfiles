@@ -23,7 +23,7 @@ sudo apt install stow
 First, check out the dotfiles repo in your $HOME directory using git
 
 ```
-git clone 
+git clone git@github.com:YogiMind/dotfiles.git
 cd dotfiles
 ```
 
