@@ -60,6 +60,6 @@ set showcmd
 
 
 " Tab is 4 spaces
-set tabstop=4
+set tabstop=2
 set expandtab
 
