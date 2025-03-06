@@ -7,7 +7,6 @@ set encoding=UTF-8
 
 call plug#begin()
     Plug 'christoomey/vim-tmux-navigator'
-    "Plug 'morhetz/gruvbox'
     Plug 'dracula/vim', { 'as': 'dracula' }
     Plug 'powerline/powerline', {'rtp': 'powerline/bindings/vim'}
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
