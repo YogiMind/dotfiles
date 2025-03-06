@@ -12,7 +12,7 @@ Ensure you have the following installed on your system
 sudo apt install git
 ```
 
-### Stow
+### GNU Stow
 
 ```
 sudo apt install stow
@@ -20,17 +20,20 @@ sudo apt install stow
 
 ## Installation
 
-First, check out the dotfiles repo in your $HOME directory using git
+First, pull the dotfiles repo into your $HOME directory using git
 
 ```
-git clone git@github.com:YogiMind/dotfiles.git
-cd dotfiles
+git clone git@github.com:YogiMind/dotfiles.git ~/
+cd ~/dotfiles
 ```
 
 
-then use GNU stow to create symlinks
+Then use GNU \<package> to create symlinks
+
+
+Example for nvim
 
 ```
-stow .
+stow nvim
 ```
 
