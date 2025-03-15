@@ -148,7 +148,7 @@ alias yr2="cd ~/university/year2"
 alias pp="cd ~/Documents/workspace/pp-lab"
 alias digi="cd ~/university/year2/Digital\ design"
 alias dsl="cd ~/university/year2/DSL"
-alias srcbash="source ~/.bashrc"
+alias sb="source ~/.bashrc"
 
 
 source /opt/ros/humble/setup.bash
