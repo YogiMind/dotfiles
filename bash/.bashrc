@@ -128,7 +128,6 @@ stty werase \^H
 
 
 # Application alias
-alias intellij="nohup ~/idea-IC-222.4345.14/bin/idea.sh &>/dev/null &"
 alias fox="firefox &> /dev/null &"
 alias cd=z
 train() {
@@ -149,6 +148,7 @@ alias pp="cd ~/Documents/workspace/pp-lab"
 alias digi="cd ~/university/year2/Digital\ design"
 alias dsl="cd ~/university/year2/DSL"
 alias sb="source ~/.bashrc"
+alias robot35='sshpass -p "turtlebot4" ssh ubuntu@192.168.50.35'
 
 
 source /opt/ros/humble/setup.bash

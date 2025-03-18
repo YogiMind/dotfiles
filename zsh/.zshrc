@@ -108,6 +108,7 @@ alias yr2="cd ~/university/year2"
 alias pp="cd ~/Documents/workspace/pp-lab"
 alias digi="cd ~/university/year2/Digital\ design"
 alias dsl="cd ~/university/year2/DSL"
+alias robot35='sshpass -p "turtlebot4" ssh ubuntu@192.168.50.35'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
