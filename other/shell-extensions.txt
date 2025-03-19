@@ -1,0 +1,39 @@
+[dash-to-dock]
+dock-fixed=false
+extend-height=true
+hotkeys-overlay=false
+
+[ding]
+show-home=true
+
+[just-perfection]
+accessibility-menu=true
+activities-button=true
+aggregate-menu=true
+animation=2
+app-menu=true
+app-menu-icon=true
+dash-icon-size=0
+panel=true
+panel-in-overview=true
+ripple-box=true
+search=true
+show-apps-button=true
+startup-status=1
+theme=false
+window-demands-attention-focus=false
+window-picker-icon=true
+workspace=true
+workspaces-in-app-grid=true
+
+[switcher]
+activate-after-ms=uint32 0
+activate-by-key=uint32 2
+icon-size=uint32 21
+max-width-percentage=uint32 53
+show-switcher=['<Super>space']
+workspace-indicator=true
+
+[tactile]
+col-0=2
+col-3=2

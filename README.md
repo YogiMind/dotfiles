@@ -37,3 +37,16 @@ Example for nvim
 stow nvim
 ```
 
+### Shell-extensions
+
+To save shell extensions, run the following command:
+
+```
+dconf dump /org/gnome/shell/extensions/ > ~/dotfiles/other/shell-extensions.txt
+```
+
+And to load the saved shell extensions:
+
+```
+dconf load /org/gnome/shell/extensions/ < ~/dotfiles/other/shell-extensions.txt
+```
