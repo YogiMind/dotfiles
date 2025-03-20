@@ -23,6 +23,13 @@ vim.keymap.set('n', '<leader>P', '"+P', { silent = true })
 vim.keymap.set('v', '<leader>p', '"+p', { silent = true })
 vim.keymap.set('v', '<leader>P', '"+P', { silent = true })
 
+-- Normal mode: Delete to void register
+vim.keymap.set('n', '<leader>d', '"_d', { silent = true })
+vim.keymap.set('n', '<leader>D', '"_D', { silent = true })
+
+-- Visual mode: Delete to void register
+vim.keymap.set('v', '<leader>d', '"_d', { silent = true })
+
 
 vim.diagnostic.config({
   float = { border = "rounded" }
