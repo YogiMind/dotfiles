@@ -35,6 +35,7 @@ setopt hist_verify
 
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
+bindkey -v
 
 export PATH=$PATH:/nix/var/nix/profiles/default/bin
 
