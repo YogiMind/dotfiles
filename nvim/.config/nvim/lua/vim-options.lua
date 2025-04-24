@@ -30,6 +30,11 @@ vim.keymap.set('n', '<leader>D', '"_D', { silent = true })
 -- Visual mode: Delete to void register
 vim.keymap.set('v', '<leader>d', '"_d', { silent = true })
 
+-- Normal mode: Remove highlighting after search
+vim.keymap.set('n', '<Esc><Esc>', ':nohlsearch<CR>', { silent = true })
+
+-- Normal mode: Open Markdown preview
+vim.keymap.set('n', '<leader>m', ':MarkdownPreview<CR>', {})
 
 vim.diagnostic.config({
   float = { border = "rounded" }
