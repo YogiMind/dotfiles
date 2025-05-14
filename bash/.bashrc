@@ -150,6 +150,7 @@ alias dsl="cd ~/university/year2/DSL"
 alias sb="source ~/.bashrc"
 alias robot35='sshpass -p "turtlebot4" ssh ubuntu@192.168.50.35'
 alias robot250='sshpass -p "turtlebot4" ssh ubuntu@192.168.50.250'
+alias gv_client='ros2 run gv_client gv_socket_server --ros-args -p tag_id:=\"8\"'
 
 
 source /opt/ros/humble/setup.bash
