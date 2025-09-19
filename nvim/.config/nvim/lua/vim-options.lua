@@ -6,6 +6,7 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd("set hidden")
 
+
 vim.g.mapleader = " "
 
 -- Normal mode: Make <leader>y work just like y but copy to clipboard

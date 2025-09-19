@@ -7,6 +7,12 @@ return {
 		"MunifTanjim/nui.nvim",
 	},
 	config = function()
-		vim.keymap.set("n", "<leader>fi", ":Neotree filesystem reveal left<CR>", {})
+    require("neo-tree").setup({
+      window = {
+        width = "15%"
+      },
+      -- You can add other configuration here
+    })
+		vim.keymap.set("n", "<leader>fi", ":Neotree filesystem reveal toggle<CR>", {})
 	end,
 }
