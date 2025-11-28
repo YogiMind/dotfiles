@@ -87,6 +87,10 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
+# Use bash-completion, if available
+[[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && \
+    . /usr/share/bash-completion/bash_completion
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -117,46 +121,35 @@ if ! shopt -oq posix; then
 fi
 
 [ -f "/home/scazard/.ghcup/env" ] && source "/home/scazard/.ghcup/env" # ghcup-env
-export PATH="/home/scazard/idea-IC-222.4345.14/bin/:$PATH:/"
 
 # Bash inits
 eval "$(zoxide init bash)"
-eval "$(starship init bash)"
+# eval "$(starship init bash)"
 
 # Bash settings
 stty werase \^H
 
 
 # Application alias
-alias fox="firefox &> /dev/null &"
 alias cd=z
-train() {
-	if [ $# -eq 2 ]; then
-        	java -cp bin Main Lab1.map "$1" "$2"
-	elif [ $# -eq 3 ]; then
-        	java -cp bin Main Lab1.map "$1" "$2" "$3"
-	else
-        	java -cp bin Main Lab1.map 0 0
-	fi
-}
 
 # Destination shortcuts
 alias ..="cd .."
 alias ...="cd ../.."
-alias yr2="cd ~/university/year2"
-alias pp="cd ~/Documents/workspace/pp-lab"
-alias digi="cd ~/university/year2/Digital\ design"
-alias dsl="cd ~/university/year2/DSL"
 alias sb="source ~/.bashrc"
-alias robot35='sshpass -p "turtlebot4" ssh ubuntu@192.168.50.35'
-alias robot250='sshpass -p "turtlebot4" ssh ubuntu@192.168.50.250'
-alias gv_client='ros2 run gv_client gv_socket_server --ros-args -p tag_id:=\"8\"'
+# alias yr2="cd ~/university/year2"
+# alias pp="cd ~/Documents/workspace/pp-lab"
+# alias digi="cd ~/university/year2/Digital\ design"
+# alias dsl="cd ~/university/year2/DSL"
+# alias robot35='sshpass -p "turtlebot4" ssh ubuntu@192.168.50.35'
+# alias robot250='sshpass -p "turtlebot4" ssh ubuntu@192.168.50.250'
+# alias gv_client='ros2 run gv_client gv_socket_server --ros-args -p tag_id:=\"8\"'
 
 
-source /opt/ros/humble/setup.bash
-source /home/scazard/Documents/workspace/ros/turtlebot4_ws/install/setup.bash
-source /etc/turtlebot4_discovery/setup.bash
-source /etc/turtlebot4/aliases.bash
+# source /opt/ros/humble/setup.bash
+# source /home/scazard/Documents/workspace/ros/turtlebot4_ws/install/setup.bash
+# source /etc/turtlebot4_discovery/setup.bash
+# source /etc/turtlebot4/aliases.bash
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-source ~/.local/share/blesh/ble.sh
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# source ~/.local/share/blesh/ble.sh
