@@ -7,6 +7,11 @@
       </object>  
     </child>  
     <child>  
+      <object class="GtkMenuItem" id="connect-wifi">  
+        <property name="label">Connect WiFi</property>  
+      </object>  
+    </child>  
+    <child>  
       <object class="GtkSeparatorMenuItem" id="delimiter1"/>  
     </child>  
     <child>  
