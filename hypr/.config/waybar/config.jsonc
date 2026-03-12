@@ -2,7 +2,7 @@
   "layer": "top",
   "position": "top",
   "mod": "dock",
-  "height": 34,
+  "height": 35,
   "exclusive": true,
   "passthrough": false,
   "gtk-layer-shell": true,
@@ -18,10 +18,10 @@
     // "wlr/taskbar"
   ],
   "modules-center": [
-    "custom/cpu",
-    "custom/pad",
-    "group/clock-inhibitor",
-    "custom/ram"
+    // "custom/cpu",
+    // "custom/pad",
+    "group/clock-inhibitor"
+    // "custom/ram"
   ],
   "modules-right": [
     "tray",
@@ -88,8 +88,8 @@
     "exec": "~/.config/scripts/music.sh",
     "tooltip": false,
     "on-click-middle": "playerctl play-pause",
-    "on-click": "playerctl previous",
-    "on-click-right": "playerctl next"
+    "on-click": "playerctl next",
+    "on-click-right": "playerctl previous"
   },
   "tray": {
     "icon-size": 14,
@@ -238,7 +238,7 @@
     "menu": "on-click",
     "menu-file": "~/.config/waybar/power_menu.xml",
     "menu-actions": {
-      "shutdown": "shutdown",
+      "shutdown": "shutdown now",
       "reboot": "reboot",
       "suspend": "systemctl suspend",
       "hibernate": "systemctl hibernate"
